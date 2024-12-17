@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Tareas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f3f4f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4b4b4b;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .day {
+      background: #f8d7da;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 16px;
+      color: #4b4b4b;
+      font-weight: bold;
+    }
+
+    .notes {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .note {
+      background: #e3f2fd;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .note textarea {
+      width: 100%;
+      height: 80px;
+      border: none;
+      padding: 5px;
+      resize: none;
+      background: white;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .note input[type="url"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border: none;
+      background: white;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Calendario de Tareas</h1>
+  <div class="calendar">
+    <div class="day">Lunes</div>
+    <div class="day">Martes</div>
+    <div class="day">Miércoles</div>
+    <div class="day">Jueves</div>
+    <div class="day">Viernes</div>
+    <div class="day">Sábado</div>
+    <div class="day">Domingo</div>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <textarea placeholder="Notas del Lunes..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Martes..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Miércoles..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Jueves..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Viernes..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Sábado..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+    <div class="note">
+      <textarea placeholder="Notas del Domingo..."></textarea>
+      <input type="url" placeholder="Link...">
+    </div>
+  </div>
+</body>
+
+</html>
